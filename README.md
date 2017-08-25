@@ -9,11 +9,11 @@
 1. выполните комманду gulp
 
 **Структура папок**
-![screenshot of sample](https://drive.google.com/open?id=0BwzVU_1mfGyLNDZDN1NZYkd2MUk)
+
 
 **Используемые по модули**
 
-```html
+```js
 var gulp         = require('gulp'), // Подключаем Gulp
     browserSync  = require('browser-sync'), // Подключаем Browser Sync
     concat       = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
