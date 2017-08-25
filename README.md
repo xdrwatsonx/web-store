@@ -1,18 +1,19 @@
-Процесс установки.
+**Процесс установки.**
 
 1. git clone https://github.com/dmgame/template.git
 2. cd template (перейдите в склонированную папку или откройте е в редакторе кода)
 3. npm up (установит все модули. У вас должен быть установлен nodejs и gulp глобально)
 
-Запуск gulp
+**Запуск gulp**
 
 1. выполните комманду gulp
 
-Структура папок
+**Структура папок**
 
 
-Используемые по модули
+**Используемые по модули**
 
+```html
 var gulp         = require('gulp'), // Подключаем Gulp
     browserSync  = require('browser-sync'), // Подключаем Browser Sync
     concat       = require('gulp-concat'), // Подключаем gulp-concat (для конкатенации файлов)
@@ -25,3 +26,5 @@ var gulp         = require('gulp'), // Подключаем Gulp
     autoprefixer = require('gulp-autoprefixer'),// Подключаем библиотеку для автоматического добавления префиксов
     spritesmith = require('gulp.spritesmith'), // Подключение библиотеки для создания спрайтов
     merge = require('merge-stream');
+
+```
