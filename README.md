@@ -9,7 +9,7 @@
 1. выполните комманду gulp
 
 **Структура папок**
-
+![screenshot of sample](https://drive.google.com/open?id=0BwzVU_1mfGyLNDZDN1NZYkd2MUk)
 
 **Используемые по модули**
 
