@@ -13,6 +13,15 @@ cd template
 ```js
  npm up
 ```
+***Установка gulp глобально***
+1. Установите nodejs по ссылке
+
+[Nodejs](https://nodejs.org/uk/)
+
+2. Установите gulp глобально
+```js
+npm i gulp -g
+```
 
 
 **Запуск gulp**
