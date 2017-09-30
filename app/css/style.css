@@ -89,6 +89,16 @@ img{
 textarea{
     resize: vertical;
 }
+label{
+    margin: 0;
+}
+input, button, select{
+    border: none;
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
 /*STYLE RESET END*/
 
 /* DEFAULT CLASSES START */
@@ -282,6 +292,70 @@ textarea{
     -webkit-border-radius: 50%;
             border-radius: 50%;
 }
+.subscribe-form{
+    padding: 35px 45px;
+}
+.aside-section{
+    padding: 40px;
+}
+.aside-section + .aside-section{
+    margin-top: 30px;
+}
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"] + label{
+    font-size: 16px;
+    color: #34404b;
+    cursor: pointer;
+}
+input[type="checkbox"] + label::before{
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 4px solid #edf0f2;
+    background-color: #edf0f2;
+    margin-right: 13px;
+}
+input[type="checkbox"]:checked +label{
+    color: #ff5912;
+}
+input[type="checkbox"]:checked + label::before{
+    border-color: #ff5912;
+}
+.ui-widget.ui-widget-content{
+    border: none;
+    background-color: #edf0f2;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    height: 3px;
+}
+.ui-slider .ui-slider-range{
+     background-color: #34404b;
+}
+.min-value,
+.max-value{
+    position: absolute;
+    bottom: 200%;
+    color: #34404b;
+}
+.ui-widget-content .ui-state-default.ui-slider-handle{
+    width: 11px;
+    height: 11px;
+    background-color: #34404b;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    border: none;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    top: 50%;
+    outline: none;
+}
+.add-range-value{
+    margin-top: 30px;
+}
 /* DEFAULT COMPONENT END */
 
 .sale-carousel{
@@ -349,4 +423,19 @@ textarea{
     position: absolute;
     left: 0;
     top: 0;
+}
+.category-wrap{
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+.footer-logo{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
