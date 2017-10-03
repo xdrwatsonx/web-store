@@ -626,6 +626,9 @@ input[type="checkbox"]:checked + label::before{
     font-size: 14px;
     line-height: 30px;
 }
+.footer-nav li:hover, a:hover{
+    color: #ff5912;
+}
 .footer-nav ul + ul{
     margin-left: 60px;
 }
