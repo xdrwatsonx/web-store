@@ -410,6 +410,14 @@ input[type="checkbox"]:checked +label{
 input[type="checkbox"]:checked + label::before{
     border-color: #ff5912;
 }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type='number']{
+    -moz-appearance: textfield;
+}
 .ui-widget{
     font-family: "Harmonia_semibold";
     font-size: 14px;
@@ -444,9 +452,14 @@ input[type="checkbox"]:checked + label::before{
 .add-range-value{
     margin-top: 30px;
 }
+.add-range-value label{
+    margin-left: 12px;
+}
 .add-range-value .range-input-reoup input{
     background-color: #edf0f2;
-    margin-left: 10px;
+    margin-left: 5px;
+    width: 45px;
+    height: 25px;
 }
 /* DEFAULT COMPONENT END */
 
