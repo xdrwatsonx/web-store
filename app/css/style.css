@@ -718,7 +718,9 @@ input[type='number']{
 .footer-nav li{
     font-family: "Harmonia_regular";
     font-size: 14px;
-    line-height: 30px;
+}
+.footer-nav li + li{
+    margin-top: 20px;
 }
 .footer-nav li:hover, a:hover{
     color: #ff5912;
@@ -748,3 +750,26 @@ input[type='number']{
 .style-cat a{
     text-decoration: none;
 }
+/* Product slider start */
+.product-slider{
+    width: 330px;
+}
+/* Product slider end */
+/* Product description start */
+.size-radio input[type="radio"]{
+    display: none;
+}
+.size-radio label{
+    font-size: 14px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.size-radio input[type="radio"]:checked + label{
+    color: #ff5912;
+    font-size: 18px;
+}
+/* Product description end */
