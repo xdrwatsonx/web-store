@@ -73,6 +73,12 @@ body{
 h1, h2, h3, h4, h5, h6, p{
     margin: 0;
 }
+h6{
+    font-family: "Harmonia_black";
+    font-size: 18px;
+    color: #ff5912;
+    margin-bottom: 40px;
+}
 ul, ol{
     margin: 0;
     padding: 0;
@@ -257,12 +263,16 @@ button{
     text-align: center;
     line-height: 20px;
 }
+.new-arrivals .items-wrap{
+    margin-bottom: 50px;
+}
 .product-item{
     font-family: "Harmonia_bold";
     font-size: 18px;
     padding: 30px 10px;
     position: relative;
     height: 372px;
+    margin-bottom: 30px;
 }
 .product-item:hover{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -323,7 +333,7 @@ button{
     margin-left: 30px;
 }
 .load-more{
-    margin-top: 80px;
+    /*margin-top: 80px;*/
 }
 .load-more a{
     text-decoration: none;
@@ -361,8 +371,21 @@ button{
 .aside-section{
     padding: 40px;
 }
+.aside-section .range{
+    margin-top: 65px;
+    font-family: "Harmonia_semibold";
+    font-size: 14px;
+    color: #34404b;
+}
 .aside-section + .aside-section{
     margin-top: 30px;
+}
+.aside-section .checkbox-group label{
+    margin-bottom: 40px;
+    display: block;
+}
+.aside-section .checkbox-group label:last-child{
+    margin-bottom: 0;
 }
 input[type="checkbox"]{
     display: none;
@@ -387,6 +410,12 @@ input[type="checkbox"]:checked +label{
 input[type="checkbox"]:checked + label::before{
     border-color: #ff5912;
 }
+.ui-widget{
+    font-family: "Harmonia_semibold";
+    font-size: 14px;
+    color: #34404b;
+}
+
 .ui-widget.ui-widget-content{
     border: none;
     background-color: #edf0f2;
@@ -414,6 +443,10 @@ input[type="checkbox"]:checked + label::before{
 }
 .add-range-value{
     margin-top: 30px;
+}
+.add-range-value .range-input-reoup input{
+    background-color: #edf0f2;
+    margin-left: 10px;
 }
 /* DEFAULT COMPONENT END */
 
@@ -642,4 +675,15 @@ input[type="checkbox"]:checked + label::before{
 }
 .payment-methods li + li{
     margin-left: 10px;
+}
+.style-cat{
+    font-family: "Harmonia_semibold";
+    font-size: 16px;
+    color: #34404b;
+}
+.style-cat li + li{
+    margin-top: 40px;
+}
+.style-cat a{
+    text-decoration: none;
 }
