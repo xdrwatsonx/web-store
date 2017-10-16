@@ -141,6 +141,12 @@ button{
     background-color: #ff5912;
     color: #fff;
 }
+.btn.btn-order{
+    padding: 12px 24px;
+    font-size: 18px;
+    -webkit-border-radius: 30px;
+            border-radius: 30px;
+}
 .icon{
     display: inline-block;
 }
@@ -709,6 +715,9 @@ input[type='number']{
     padding-top: 120px;
     padding-bottom: 60px;
 }
+footer{
+    margin-top: 60px;
+}
 .footer-logo{
     display: -webkit-box;
     display: -webkit-flex;
@@ -787,4 +796,82 @@ input[type='number']{
     color: #ff5912;
     font-size: 18px;
 }
+/*.size-radio label::before{*/
+    /*content: '-';*/
+    /*margin: 0 5px 0;*/
+/*}*/
 /* Product description end */
+.product-wrap{
+    margin-bottom: 60px;
+}
+.product-wrap .item-title{
+    font-family: "Harmonia_semibold";
+    font-size: 18px;
+    color: #3c4751;
+    padding-bottom: 30px;
+}
+.product-wrap .item-info{
+    font-family: "Harmonia_regular";
+    font-size: 16px;
+    line-height: 30px;
+    white-space: pre-line;
+    color: #495662;
+}
+.product-wrap .order-form{
+    margin-top: 35px;
+    padding: 25px 0;
+    border-top: 1px solid #f4f6f8;
+    border-bottom: 1px solid #f4f6f8;
+}
+.product-wrap .order-form span{
+    font-family: "Harmonia_semibold";
+    font-size: 18px;
+    padding-right: 20px;
+}
+.product-wrap .size-radio {
+    font-size: 14px;
+    /*margin-left: 20px;*/
+}
+.product-wrap .size-radio + .size-radio{
+    margin-left: 20px;
+}
+.order-now{
+    padding-top: 40px;
+}
+.order-now .price{
+    margin-right: auto;
+    font-family: "Harmonia_black";
+    font-size: 20px;
+}
+.order-now .item-controls li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.jq-number__field{
+    border: none;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 25px;
+}
+.jq-number__field input{
+    background: none;
+    font-family: "Harmonia_semibold";
+    font-size: 18px;
+    color: #ff5912;
+    padding: 5px;
+}
+.jq-number__spin{
+    border: none;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+.jq-number__spin:hover{
+    background: none;
+}
+.jq-number__spin:active{
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
