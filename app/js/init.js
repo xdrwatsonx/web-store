@@ -75,4 +75,10 @@ $( function() {
     // formstyler init
     $('.input-quantity').styler();
 
+    // slick nav init
+    $('.header-nav').slicknav({
+        appendTo: 'header .bottom-header .flex-container',
+        label: ''
+    });
+
 } );
