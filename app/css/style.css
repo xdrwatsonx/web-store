@@ -218,6 +218,11 @@ button{
 .default-section{
     padding: 60px 0;
 }
+@media (max-width: 599px) {
+    .default-section{
+        padding: 30px 0;
+    }
+}
 .header{
     position: relative;
 }
@@ -406,7 +411,7 @@ button{
     margin-left: 30px;
 }
 
-@media (max-width: 1099px) {
+@media (max-width: 1199px) {
     .product-item .item-description, .product-item .more-info-on-hover{
         padding: 0;
     }
@@ -467,6 +472,38 @@ button{
     }
     .subscribe-description{
         margin-bottom: 30px;
+    }
+}
+@media (max-width: 599px) {
+    .subscribe-form .subscribe-description .news-letter,
+    .subscribe-form .subscribe-description .join-text{
+        display: block;
+        text-align: center;
+        margin-right: 0;
+    }
+}
+@media (max-width: 479px) {
+    /*.subscribe-form .flex-container{*/
+    /*flex-wrap: wrap;*/
+    /*}*/
+    .subscribe-form .flex-container{
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+            -ms-flex-order: 1;
+                order: 1;
+        display: block;
+        text-align: center;
+    }
+    .subscribe-form .flex-container .icon-mail-ic{
+        display: inline-block;
+    }
+    .subscribe-form .flex-container .subscribe-input{
+        display: inline-block;
+        width: 150px;
+        margin-right: 0;
+    }
+    .subscribe-form .flex-container .btn{
+        margin-top: 20px;
     }
 }
 .aside-section{
@@ -629,10 +666,27 @@ input[type='number']{
     background-color: #ff5912;
     height: 36px;
 }
+
+@media (max-width: 767px) {
+    .sale-carousel{
+        min-height: auto;
+        padding: 30px 0;
+    }
+}
+@media (max-width: 599px) {
+    .sale-carousel .title.big{
+        font-size: 30px;
+    }
+    .sale-carousel .item-title,
+    .sale-carousel .item-info,
+    .sale-carousel .order{
+        font-size: 12px;
+    }
+}
 .kit{
     padding: 20px 58px;
     border: 1px solid #eaedef;
-    max-height: 100px;
+    /*max-height: 100px;*/
 }
 .kit .title-kit{
     font-family: "Harmonia_black";
@@ -713,7 +767,7 @@ input[type='number']{
     padding-top: 15px;
 }
 
-@media (max-width: 1099px) {
+@media (max-width: 1199px) {
     .kit{
         padding: 20px 30px;
     }
@@ -722,6 +776,59 @@ input[type='number']{
     .kit{
         margin-bottom: 30px;
     }
+}
+@media (max-width: 599px) {
+    .kit{
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .kit .flex-container .order{
+        padding-left: 10px;
+    }
+    .kit .order span{
+        font-size: 20px;
+    }
+    .kit .title-kit .item-title{
+        font-size: 11px;
+    }
+}
+@media (max-width: 479px) {
+    .kit{
+        padding-right: 10px;
+        padding-left: 20px;
+    }
+    .kit .flex-container{
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+    .kit .flex-container .order{
+        border-left: none;
+        padding-left: 0;
+        margin: 20px auto 0;
+    }
+    .kit .sales-block{
+        margin: 10px auto 20px;
+    }
+    .kit .title-kit{
+        margin: auto;
+        text-align: center;
+    }
+    .kit .order .icon{
+        margin-right: 5px;
+    }
+}
+/*@media (max-width: 599px) {*/
+    /*.kit .flex-container{*/
+        /*flex-wrap: wrap;*/
+        /*justify-content: center;*/
+    /*}*/
+    /*.kit .sales-block .light-orange-bg{*/
+        /*display: block;*/
+    /*}*/
+/*}*/
+.best-sales .best-item-img{
+    padding-right: 20px;
 }
 .best-sales .best-item{
     padding: 35px 30px;
@@ -750,17 +857,28 @@ input[type='number']{
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 .best-item .best-item-description{
-    padding-left: 21px;
+    /*margin-right: auto;*/
+    padding-left: 20px;
     border-left: 1px solid #f4f6f8;
 }
 
-@media (max-width: 1099px) {
+@media (max-width: 1199px) {
     .best-sales .best-item{
-        padding-right: 12px;
-        padding-left: 12px;
+        padding: 25px 20px;
     }
-    .best-item-img img{
-        max-width: 85%;
+    .best-sales .best-item-title{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 991px) {
+    .best-item .best-item-description{
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .best-item{
+        margin-bottom: 30px;
     }
 }
 .best-item .best-item-on-hover{
@@ -973,7 +1091,6 @@ footer{
     padding-right: 10px;
     margin-left: -10px;
     text-align: center;
-
 }
 
 /* Product description end */
@@ -1001,6 +1118,12 @@ footer{
     color: #34404b;
     text-decoration: none;
     padding: 10px 15px;
+}
+.slicknav_menu{
+    background: none;
+}
+.slicknav_btn{
+    background-color: #ff5912;
 }
 /* Slicknav end*/
 .product-wrap{
@@ -1048,6 +1171,58 @@ footer{
 .order-now .item-controls li{
     display: inline-block;
     margin-right: 30px;
+}
+@media (max-width: 599px) {
+    .product-description .title.big {
+        font-size: 30px;
+    }
+
+    .product-description .item-title,
+    .product-description .item-info {
+        font-size: 12px;
+    }
+    #product-option-form{
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+    .product-wrap .choose-size,
+    .product-wrap .item-count{
+        margin: auto;
+    }
+    .product-wrap .item-count{
+        border-left: 1px solid #7c8791;
+        margin-left: -30px;
+    }
+    .order-now{
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
+    }
+    .order-now .price{
+        margin: 0;
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+            -ms-flex-order: 1;
+                order: 1;
+        padding: 20px 0;
+    }
+    .order-now .btn{
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+            -ms-flex-order: 1;
+                order: 1;
+    }
+    .order-now .item-controls li:last-child{
+        margin: 0;
+    }
+    
 }
 .jq-number__field{
     border: none;
